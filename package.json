@@ -1,0 +1,44 @@
+{
+  "name": "tamil.monster-dictionary-server",
+  "private": true,
+  "description": "",
+  "version": "0.1.0",
+  "author": "Ludovic Lacouture <lacoludo@outlook.com>",
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.6.0",
+    "merge-graphql-schemas": "^1.7.6",
+    "mongoose": "^5.9.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "tamil",
+    "monster",
+    "dictionary",
+    "server"
+  ],
+  "license": "",
+  "scripts": {
+    "build": "webpack --config webpack.config.babel.js",
+    "develop": "nodemon --exec babel-node src/index.js",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "node public/app.js",
+    "serve": "",
+    "clean": "",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lacoludo/tamil.monster-dictionary-server"
+  },
+  "bugs": {
+    "url": "https://github.com/lacoludo/tamil.monster-dictionary-server/issues"
+  }
+}
